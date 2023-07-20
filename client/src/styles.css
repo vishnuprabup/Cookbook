@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar component */
+
+.navbar {
+  padding: 0 6rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-cuisine {
+  margin-left: auto;
+}
+
+.navbar-cuisine > a {
+  font-size: 1.2rem;
+  margin-left: 2rem;
+}
+
+/* Cuisine Component */
+
+.cuisine {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+  place-items: center;
+  padding: 0 6rem;
+}
+
+.cuisine-component {
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(252, 252, 252);
+  cursor: pointer;
+}
+
+.cuisine-component:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.cuisine-image {
+  width: 90%;
+  border-radius: 1rem;
+}
+
+.cuisine-title {
+  text-align: center;
+}
+
+.cuisine-heading {
+  margin-left: 1rem;
+  padding: 0 6rem;
+}
+
+/* Search component  */
+
+.search-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 3em;
+}
+
+.search-bar {
+  position: relative;
+}
+
+.search-bar input {
+  border: none;
+  background-color: rgb(233, 233, 233);
+  font-size: 1.5rem;
+  padding: 0.6rem 3rem;
+  border-radius: 2rem;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  width: 40rem;
+}
+
+.search-heading {
+  font-size: 2.5rem;
+}
+
+.search-burger {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 23%;
+  left: 2%;
+}
+
+/* Searched Component */
+.searched-component {
+  padding: 0 6rem;
+}
+.searched-search-bar {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.searched-search-bar input {
+  border: none;
+  background-color: rgb(233, 233, 233);
+  font-size: 1.5rem;
+  padding: 0.6rem 3rem;
+  border-radius: 2rem;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  width: 40%;
+  margin-bottom: 2rem;
+}
+
+.searched-burger {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 17%;
+  left: 27.5%;
+}
+
+/* Surprise Component */
+
+.surprise-component {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.surprise-btn {
+  position: absolute;
+  top: 6em;
+  padding: 1rem 4rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.surprise-noodle {
+  font-size: 1.3rem;
+  position: relative;
+  left: 0.5rem;
+  top: 0.2rem;
+}
+
+/* Recipe Component */
+
+.recipe {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 6rem;
+}
+
+.recipe-sidebar-left {
+  width: 50%;
+}
+
+.recipe-sidebar-right {
+  width: 50%;
+}
+
+.recipe-title {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.recipe-image {
+  width: 65%;
+  border-radius: 1rem;
+}
+
+.recipe-summary {
+  width: 80%;
+  text-align: justify;
+}
+
+.recipe-btn {
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  border: none;
+  margin-right: 2rem;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  background-color: lightgrey;
+  color: black;
+}
+
+.recipe-sidebar-right .clicked-btn {
+  background-color: black;
+  color: white;
+}
+
+.recipe-ins {
+  margin-left: 1rem;
+  line-height: 2rem;
+  text-align: justify;
+  width: 80%;
+}
+
+.recipe-ingredients > li {
+  margin-top: 1.5rem;
+}
