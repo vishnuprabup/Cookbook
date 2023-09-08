@@ -84,7 +84,7 @@ const Auth = () => {
     }
   };
   return (
-    <div>
+    <div className="container">
       <div className="auth-component">
         <div className="auth-inner-component">
           <div className="auth-contents">
